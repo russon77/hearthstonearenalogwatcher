@@ -14,11 +14,31 @@ To use (with caution), simply do::
     >>>     pass
 
 And so on for the following events:
+
 - ENTERED_ARENA
 - EXITED_ARENA
 - HERO_SELECTED
 - CARD_DRAFTED
 - DRAFT_ENDED
+
+Event Objects
+*************
+Event objects contain the following attributes:
+
+- ``type``: one of the enumerated types listed just above.
+- ``data``: an ArenaDraft object, containing the following attributes:
+    - ``.drafted``: list of cards currently in player's deck, in order of selection.
+    - ``.hero``: None or String representation of currently selected hero. Hero names are:
+        - "priest"
+        - "mage"
+        - "warlock",
+        - "druid",
+        - "hunter",
+        - "paladin",
+        - "rogue",
+        - "shaman",
+        - "warrior"
+    - ``.draft_over``: boolean, whether draft contains thirty (30) cards.
 
 It's that simple!
 

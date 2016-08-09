@@ -26,9 +26,9 @@ Event Objects
 Event objects contain the following attributes:
 
 - ``type``: one of the enumerated types listed just above.
-- ``data``: an ArenaDraft object, containing the following attributes::
+- ``data``: an ArenaDraft object, containing the following attributes
     - ``.drafted``: list of cards currently in player's deck, in order of selection.
-    - ``.hero``: None or String representation of currently selected hero. Hero names are::
+    - ``.hero``: None or String representation of currently selected hero. Hero names are
         - "priest"
         - "mage"
         - "warlock",

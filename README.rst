@@ -24,9 +24,9 @@ It's that simple!
 
 Errors
 ^^^^^^
-LogLocationInvalid
-******************
-Raised when the passed parameter ``log_location`` is invalid
+FileNotFoundError
+*****************
+Raised when the passed parameter ``log_location`` is invalid and a log file is attempted to be accessed.
 
 Tests and Examples
 ^^^^^^^^^^^^^^^^^^

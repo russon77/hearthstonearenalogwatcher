@@ -19,4 +19,7 @@ setup(name='hearthstonearenalogwatcher',
       packages=['hearthstonearenalogwatcher'],
       zip_safe=False,
       include_package_data=True,
-      install_requires=[])
+      install_requires=[],
+      test_suite='nose.collector',
+      tests_require='nose'
+      )

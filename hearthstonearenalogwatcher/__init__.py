@@ -7,11 +7,11 @@ class ArenaDraft(object):
     """
     mostly POPO - plain ol python object for hero, drafted, and draft_over
     """
-    def __init__(self, hero, drafted):
+    def __init__(self, hero, drafted, draft_over):
         self.hero = hero
         self.drafted = drafted
         # draft is over when the player has drafted 30 cards
-        self.draft_over = len(drafted) == 30
+        self.draft_over = draft_over
 
 
 class ArenaEvent(object):
@@ -78,12 +78,12 @@ class HearthstoneArenaLogWatcher(object):
         # initialize our state
         hero = None
         cards = []
+        draft_over = False
 
         # perform main operation: loop over each line in the file (from first to last) and update the state
         # appropriately
         with open(log_location) as log_file:
             for line in log_file:
-                # todo parse hero selection from a draft in progress
                 # resumed draft: process drafted cards and selected hero.
                 # if hero is selected, that precedes the listing of all currently drafted cards, so it is necessary
                 # to reset the currently drafted cards
@@ -94,11 +94,16 @@ class HearthstoneArenaLogWatcher(object):
                     # if the hero is set this way, reset the drafted cards array as well because
                     # the draft must have been paused / resumed at a later time
                     cards = []
+                # check to see if the draft has been reset while our watcher is open: if so, reset the draft state
+                elif "SetDraftMode - NO_ACTIVE_DRAFT" in line or "SetDraftMode - ACTIVE_DRAFT_DECK" in line or \
+                        "SetDraftMode - IN_REWARDS" in line:
+                    hero = None
+                    cards = []
                 # current draft actions
                 elif "Client chooses: " in line:
                     cards.append(line.rsplit(" ", 1)[1].replace("\n", "")[1:-1])
 
-        return ArenaDraft(hero, cards)
+        return ArenaDraft(hero, cards, draft_over)
 
     def event_generator(self, speed=1):
         """
@@ -127,20 +132,27 @@ class HearthstoneArenaLogWatcher(object):
             # check for Entered_Arena event
             if previous_mode != "DRAFT" and current_mode == "DRAFT":
                 yield ArenaEvent(ArenaEvent.ENTERED_ARENA, current_draft_state)
+
             # likewise, check for Exited_Arena event
             elif previous_mode == "DRAFT" and current_mode != "DRAFT":
                 yield ArenaEvent(ArenaEvent.EXITED_ARENA, current_draft_state)
+
             # to reach this portion, current mode and previous mode are both set to "DRAFT"
             elif previous_mode == "DRAFT" and current_mode == "DRAFT":
+
                 # draft has ended when thirty (30) cards have been drafted. this would make the other events impossible
+                # todo correct this
                 if current_draft_state.draft_over and not previous_draft_state.draft_over:
                     yield ArenaEvent(ArenaEvent.DRAFT_ENDED, current_draft_state)
+
                 # prevent Draft_Over event duplication / repeated emission
                 elif previous_draft_state.draft_over and current_draft_state.draft_over:
                     pass
+
                 # if hero has changed, it has changed from None to being selected by the player
                 elif current_draft_state.hero is not None and previous_draft_state.hero != current_draft_state.hero:
                     yield ArenaEvent(ArenaEvent.HERO_SELECTED, current_draft_state)
+
                 # to reach this branch, the hero has been selected and now we check if a card has been drafted
                 elif len(previous_draft_state.drafted) != len(current_draft_state.drafted):
                     yield ArenaEvent(ArenaEvent.CARD_DRAFTED, current_draft_state)
@@ -149,9 +161,3 @@ class HearthstoneArenaLogWatcher(object):
             previous_draft_state = current_draft_state
             previous_mode = current_mode
             sleep(1 / speed)
-
-if __name__ == '__main__':
-    # todo real testing... in the testing folder?
-    y = HearthstoneArenaLogWatcher.get_state_of_current_log(r"D:\Program Files\Hearthstone\Logs\Arena.log")
-
-    print(y)

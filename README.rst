@@ -50,7 +50,8 @@ Raised when the passed parameter ``log_location`` is invalid and a log file is a
 
 Tests and Examples
 ^^^^^^^^^^^^^^^^^^
-Todo: make some tests and examples!
+Check out the ``tests`` folder for examples of different logs and how they are parsed by the module. The tests are
+divided into two categories: ``get_state_of_current_log()`` and ``get_state_of_current_screen()``.
 
 License
 ^^^^^^^

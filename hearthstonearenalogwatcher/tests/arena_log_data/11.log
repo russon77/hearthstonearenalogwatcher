@@ -1,0 +1,13 @@
+D 16:34:31.5304177 SetDraftMode - NO_ACTIVE_DRAFT
+D 16:35:08.8485521 DraftManager.OnBegin - Got new draft deck with ID: 618717904
+D 16:35:08.8485521 SetDraftMode - DRAFTING
+D 16:35:55.8482404 Client chooses: Rexxar (HERO_05)
+D 16:36:28.0650831 Client chooses: Jaina Proudmoore (HERO_08)
+D 16:36:28.9821355 Client chooses: Uther Lightbringer (HERO_04)
+D 16:36:29.7321784 Client chooses: Rexxar (HERO_05)
+D 16:37:51.8848773 Client chooses: Jaina Proudmoore (HERO_08)
+D 16:37:58.4352519 Client chooses: Rexxar (HERO_05)
+D 16:38:04.0685741 Client chooses: Uther Lightbringer (HERO_04)
+D 16:39:26.4042835 Client chooses: Jaina Proudmoore (HERO_08)
+D 16:39:28.0543779 Client chooses: Rexxar (HERO_05)
+D 16:39:39.9890605 DraftManager.OnChosen(): hero=HERO_05 premium=NORMAL

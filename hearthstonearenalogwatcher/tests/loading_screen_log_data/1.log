@@ -1,0 +1,36 @@
+D 14:03:58.8927803 Box.Awake()
+D 14:03:59.0577898 LoadingScreen.OnSceneLoaded() - prevMode=STARTUP currMode=LOGIN
+D 14:03:59.0577898 LoadingScreen.OnSceneLoaded() - m_assetLoadStartTimestamp=5247749644817965802
+D 14:03:59.0577898 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:04:27.3394074 LoadingScreen.OnScenePreUnload() - prevMode=LOGIN nextMode=HUB m_phase=INVALID
+D 14:04:28.3564656 LoadingScreen.OnSceneUnloaded() - prevMode=LOGIN nextMode=HUB m_phase=INVALID
+D 14:04:28.4094686 LoadingScreen.OnSceneLoaded() - prevMode=LOGIN currMode=HUB
+D 14:04:28.4094686 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:04:29.5755353 LoadingScreen.OnScenePreUnload() - prevMode=HUB nextMode=ADVENTURE m_phase=INVALID
+D 14:04:29.8605516 LoadingScreen.OnSceneUnloaded() - prevMode=HUB nextMode=ADVENTURE m_phase=INVALID
+D 14:04:30.1215665 LoadingScreen.OnSceneLoaded() - prevMode=HUB currMode=ADVENTURE
+D 14:04:30.1215665 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:04:55.3930120 LoadingScreen.OnScenePreUnload() - prevMode=ADVENTURE nextMode=HUB m_phase=INVALID
+D 14:04:56.4140704 LoadingScreen.OnSceneUnloaded() - prevMode=ADVENTURE nextMode=HUB m_phase=INVALID
+D 14:04:56.4590729 LoadingScreen.OnSceneLoaded() - prevMode=ADVENTURE currMode=HUB
+D 14:04:56.4590729 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:04:57.1591130 LoadingScreen.OnScenePreUnload() - prevMode=HUB nextMode=ADVENTURE m_phase=INVALID
+D 14:04:57.4601302 LoadingScreen.OnSceneUnloaded() - prevMode=HUB nextMode=ADVENTURE m_phase=INVALID
+D 14:04:57.6761426 LoadingScreen.OnSceneLoaded() - prevMode=HUB currMode=ADVENTURE
+D 14:04:57.6761426 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:05:06.1266259 LoadingScreen.OnScenePreUnload() - prevMode=ADVENTURE nextMode=HUB m_phase=INVALID
+D 14:05:07.1436841 LoadingScreen.OnSceneUnloaded() - prevMode=ADVENTURE nextMode=HUB m_phase=INVALID
+D 14:05:07.1926869 LoadingScreen.OnSceneLoaded() - prevMode=ADVENTURE currMode=HUB
+D 14:05:07.1926869 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:06:07.2781236 LoadingScreen.OnScenePreUnload() - prevMode=HUB nextMode=TOURNAMENT m_phase=INVALID
+D 14:06:07.5621398 LoadingScreen.OnSceneUnloaded() - prevMode=HUB nextMode=TOURNAMENT m_phase=INVALID
+D 14:06:08.5121941 LoadingScreen.OnSceneLoaded() - prevMode=HUB currMode=TOURNAMENT
+D 14:06:08.5121941 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:06:35.7787537 LoadingScreen.OnScenePreUnload() - prevMode=TOURNAMENT nextMode=HUB m_phase=INVALID
+D 14:06:36.7988120 LoadingScreen.OnSceneUnloaded() - prevMode=TOURNAMENT nextMode=HUB m_phase=INVALID
+D 14:06:36.8448147 LoadingScreen.OnSceneLoaded() - prevMode=TOURNAMENT currMode=HUB
+D 14:06:36.8448147 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:06:37.2118357 LoadingScreen.OnScenePreUnload() - prevMode=HUB nextMode=DRAFT m_phase=INVALID
+D 14:06:37.5128529 LoadingScreen.OnSceneUnloaded() - prevMode=HUB nextMode=DRAFT m_phase=INVALID
+D 14:06:37.9778795 LoadingScreen.OnSceneLoaded() - prevMode=HUB currMode=DRAFT
+D 14:06:37.9778795 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD

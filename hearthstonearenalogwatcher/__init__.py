@@ -84,24 +84,51 @@ class HearthstoneArenaLogWatcher(object):
         # appropriately
         with open(log_location) as log_file:
             for line in log_file:
+                # first check for "SetDraftMode - %s"
+                # if line matches DRAFTING, then a new draft has begun, so our state should be reset
+                if "SetDraftMode - DRAFTING" in line:
+                    # hero = None
+                    cards = []
+                    draft_over = False
+                # no active draft means a blank slate
+                elif "SetDraftMode - NO_ACTIVE_DRAFT" in line:
+                    hero = None
+                    cards = []
+                    draft_over = False
+                elif "SetDraftMode - ACTIVE_DRAFT_DECK" in line or "SetDraftMode - IN_REWARDS" in line:
+                    hero = None
+                    cards = []
+                    draft_over = True
+                # current draft actions
+                # client chooses is used for both temporary hero selection and regular card drafting.
+                # if the hero has not been selected, then cards can not have been drafted.
+                elif "Client chooses: " in line:
+                    if hero is not None:
+                        cards.append(line.rsplit(" ", 1)[1].replace("\n", "")[1:-1])
+
+                        draft_over = False
+                # next we check for hero selection. this occurs in live-drafting on the following match.
+                elif "DraftManager.OnChosen(): hero" in line:
+                    hero = hero_id_to_our_id[line.rsplit(" ", 2)[1].split("=")[1]]
                 # resumed draft: process drafted cards and selected hero.
                 # if hero is selected, that precedes the listing of all currently drafted cards, so it is necessary
                 # to reset the currently drafted cards
-                if "DraftManager.OnChoicesAndContents - Draft deck contains card" in line:
+                elif "DraftManager.OnChoicesAndContents - Draft deck contains card" in line:
                     cards.append(line.rsplit(" ", 1)[1].replace("\n", ""))
+
+                    draft_over = False
                 elif "DraftManager.OnChoicesAndContents" in line and "Hero Card = " in line:
                     hero = hero_id_to_our_id[line.rsplit(" ", 1)[1].replace("\n", "")]
                     # if the hero is set this way, reset the drafted cards array as well because
                     # the draft must have been paused / resumed at a later time
                     cards = []
+
+                    draft_over = False
                 # check to see if the draft has been reset while our watcher is open: if so, reset the draft state
                 elif "SetDraftMode - NO_ACTIVE_DRAFT" in line or "SetDraftMode - ACTIVE_DRAFT_DECK" in line or \
                         "SetDraftMode - IN_REWARDS" in line:
                     hero = None
                     cards = []
-                # current draft actions
-                elif "Client chooses: " in line:
-                    cards.append(line.rsplit(" ", 1)[1].replace("\n", "")[1:-1])
 
         return ArenaDraft(hero, cards, draft_over)
 

@@ -1,0 +1,74 @@
+D 14:03:58.8927803 Box.Awake()
+D 14:03:59.0577898 LoadingScreen.OnSceneLoaded() - prevMode=STARTUP currMode=LOGIN
+D 14:03:59.0577898 LoadingScreen.OnSceneLoaded() - m_assetLoadStartTimestamp=5247749644817965802
+D 14:03:59.0577898 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:04:27.3394074 LoadingScreen.OnScenePreUnload() - prevMode=LOGIN nextMode=HUB m_phase=INVALID
+D 14:04:28.3564656 LoadingScreen.OnSceneUnloaded() - prevMode=LOGIN nextMode=HUB m_phase=INVALID
+D 14:04:28.4094686 LoadingScreen.OnSceneLoaded() - prevMode=LOGIN currMode=HUB
+D 14:04:28.4094686 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:04:29.5755353 LoadingScreen.OnScenePreUnload() - prevMode=HUB nextMode=ADVENTURE m_phase=INVALID
+D 14:04:29.8605516 LoadingScreen.OnSceneUnloaded() - prevMode=HUB nextMode=ADVENTURE m_phase=INVALID
+D 14:04:30.1215665 LoadingScreen.OnSceneLoaded() - prevMode=HUB currMode=ADVENTURE
+D 14:04:30.1215665 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:04:55.3930120 LoadingScreen.OnScenePreUnload() - prevMode=ADVENTURE nextMode=HUB m_phase=INVALID
+D 14:04:56.4140704 LoadingScreen.OnSceneUnloaded() - prevMode=ADVENTURE nextMode=HUB m_phase=INVALID
+D 14:04:56.4590729 LoadingScreen.OnSceneLoaded() - prevMode=ADVENTURE currMode=HUB
+D 14:04:56.4590729 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:04:57.1591130 LoadingScreen.OnScenePreUnload() - prevMode=HUB nextMode=ADVENTURE m_phase=INVALID
+D 14:04:57.4601302 LoadingScreen.OnSceneUnloaded() - prevMode=HUB nextMode=ADVENTURE m_phase=INVALID
+D 14:04:57.6761426 LoadingScreen.OnSceneLoaded() - prevMode=HUB currMode=ADVENTURE
+D 14:04:57.6761426 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:05:06.1266259 LoadingScreen.OnScenePreUnload() - prevMode=ADVENTURE nextMode=HUB m_phase=INVALID
+D 14:05:07.1436841 LoadingScreen.OnSceneUnloaded() - prevMode=ADVENTURE nextMode=HUB m_phase=INVALID
+D 14:05:07.1926869 LoadingScreen.OnSceneLoaded() - prevMode=ADVENTURE currMode=HUB
+D 14:05:07.1926869 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:06:07.2781236 LoadingScreen.OnScenePreUnload() - prevMode=HUB nextMode=TOURNAMENT m_phase=INVALID
+D 14:06:07.5621398 LoadingScreen.OnSceneUnloaded() - prevMode=HUB nextMode=TOURNAMENT m_phase=INVALID
+D 14:06:08.5121941 LoadingScreen.OnSceneLoaded() - prevMode=HUB currMode=TOURNAMENT
+D 14:06:08.5121941 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:06:35.7787537 LoadingScreen.OnScenePreUnload() - prevMode=TOURNAMENT nextMode=HUB m_phase=INVALID
+D 14:06:36.7988120 LoadingScreen.OnSceneUnloaded() - prevMode=TOURNAMENT nextMode=HUB m_phase=INVALID
+D 14:06:36.8448147 LoadingScreen.OnSceneLoaded() - prevMode=TOURNAMENT currMode=HUB
+D 14:06:36.8448147 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:06:37.2118357 LoadingScreen.OnScenePreUnload() - prevMode=HUB nextMode=DRAFT m_phase=INVALID
+D 14:06:37.5128529 LoadingScreen.OnSceneUnloaded() - prevMode=HUB nextMode=DRAFT m_phase=INVALID
+D 14:06:37.9778795 LoadingScreen.OnSceneLoaded() - prevMode=HUB currMode=DRAFT
+D 14:06:37.9778795 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:07:02.7802981 LoadingScreen.OnScenePreUnload() - prevMode=DRAFT nextMode=HUB m_phase=INVALID
+D 14:07:03.7963562 LoadingScreen.OnSceneUnloaded() - prevMode=DRAFT nextMode=HUB m_phase=INVALID
+D 14:07:03.8463591 LoadingScreen.OnSceneLoaded() - prevMode=DRAFT currMode=HUB
+D 14:07:03.8463591 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:07:18.9632237 LoadingScreen.OnScenePreUnload() - prevMode=HUB nextMode=TOURNAMENT m_phase=INVALID
+D 14:07:19.2472400 LoadingScreen.OnSceneUnloaded() - prevMode=HUB nextMode=TOURNAMENT m_phase=INVALID
+D 14:07:19.8802762 LoadingScreen.OnSceneLoaded() - prevMode=HUB currMode=TOURNAMENT
+D 14:07:19.8812762 LoadingScreen.OnSceneLoaded() - END - INVALID != Phase.WAITING_FOR_SCENE_LOAD
+D 14:07:51.1510647 LoadingScreen.SetTransitionAudioListener() - AudioListener (UnityEngine.AudioListener)
+D 14:07:51.1650655 LoadingScreen.OnScenePreUnload() - prevMode=TOURNAMENT nextMode=GAMEPLAY m_phase=INVALID
+D 14:07:51.2130683 LoadingScreen.OnSceneUnloaded() - prevMode=TOURNAMENT nextMode=GAMEPLAY m_phase=WAITING_FOR_SCENE_UNLOAD
+D 14:07:51.2130683 LoadingScreen.OnSceneUnloaded() - m_assetLoadEndTimestamp=5247749647139038559
+D 14:07:51.2190686 Box.OnDestroy()
+D 14:07:51.2200687 LoadingScreen.SetAssetLoadStartTimestamp() - m_assetLoadStartTimestamp=5247749644815625668
+D 14:07:51.5150856 Gameplay.Awake()
+D 14:07:51.5870897 Gameplay.Start()
+D 14:07:51.6040907 LoadingScreen.DisableTransitionUnfriendlyStuff() - MOP(Clone) (UnityEngine.GameObject)
+D 14:07:51.7310979 LoadingScreen.DisableTransitionUnfriendlyStuff() - BoardCameras(Clone) (UnityEngine.GameObject)
+D 14:07:51.7360982 LoadingScreen.DisableTransitionUnfriendlyStuff() - BoardStandardGame(Clone) (UnityEngine.GameObject)
+D 14:07:51.9371097 Gameplay.OnPowerHistory() - powerList=101
+D 14:07:51.9531106 MulliganManager.HandleGameStart() - IsPastBeginPhase()=False
+D 14:07:51.9621111 MulliganManager.WaitForHeroesAndStartAnimations()
+D 14:07:51.9621111 MulliganManager.HandleGameStart() - IsMulliganPhase()=False
+D 14:07:52.0301150 Gameplay.OnPowerHistory() - powerList=3
+D 14:07:52.0401156 Gameplay.OnEntityChoices() - id=1
+D 14:07:52.0511162 Gameplay.OnPowerHistory() - powerList=1
+D 14:07:52.0651170 Gameplay.OnEntityChoices() - id=2
+D 14:07:52.0851182 MulliganManager.WaitForHeroesAndStartAnimations() - NotifySceneLoaded()
+D 14:07:52.2481275 LoadingScreen.OnSceneLoaded() - prevMode=TOURNAMENT currMode=GAMEPLAY
+D 14:07:56.2653573 LoadingScreen.HackWaitThenStartTransitionEffects() - START
+D 14:07:56.2813582 LoadingScreen.FadeOut()
+D 14:07:57.2824154 LoadingScreen.OnFadeOutComplete()
+D 14:07:57.2824154 LoadingScreen.FinishPreviousScene()
+D 14:07:57.2844156 LoadingScreen.ClearPreviousSceneAssets() - START m_assetLoadStartTimestamp=5247749644815625668 m_assetLoadEndTimestamp=5247749647139038559
+D 14:07:57.2844156 LoadingScreen.ClearAssets() - START startTimestamp=5247749644815625668 endTimestamp=5247749647139038559 diff=2323412891
+D 14:07:57.2954162 LoadingScreen.ClearPreviousSceneAssets() - END m_assetLoadStartTimestamp=5247749647139038559 m_assetLoadEndTimestamp=0
+D 14:07:57.2954162 LoadingScreen.FadeIn()
+D 14:07:58.2984736 LoadingScreen.OnFadeInComplete()

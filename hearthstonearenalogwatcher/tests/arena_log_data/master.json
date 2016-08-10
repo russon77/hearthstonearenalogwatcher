@@ -41,10 +41,9 @@
         "EX1_608",
         "CS2_023",
         "OG_150",
-        "NEW1_041",
-        "CS2_023"
+        "NEW1_041"
       ],
-    "draft_over": true
+    "draft_over": false
   },
   "4": {
     "hero": null,
@@ -83,22 +82,100 @@
         "EX1_608",
         "CS2_023",
         "OG_150",
-        "NEW1_041",
-        "CS2_023"
-      ],
-    "draft_over": true
-  },
-  "6": {
-    "hero": "mage",
-    "drafted":
-      [
-        "OG_147"
+        "NEW1_041"
       ],
     "draft_over": false
+  },
+  "6": {
+    "hero": null,
+    "drafted":
+      [],
+    "draft_over": true
   },
   "7": {
     "hero": null,
     "drafted": [],
     "draft_over": false
+  },
+  "8": {
+    "hero": null,
+    "drafted": [],
+    "draft_over": false
+  },
+  "9": {
+    "hero": null,
+    "drafted": [],
+    "draft_over": false
+  },
+  "10": {
+    "hero": null,
+    "drafted": [],
+    "draft_over": false
+  },
+  "11": {
+    "hero": "hunter",
+    "drafted": [],
+    "draft_over": false
+  },
+  "12": {
+    "hero": "hunter",
+    "drafted": [],
+    "draft_over": false
+  },
+  "13": {
+    "hero": "hunter",
+    "drafted":
+    [
+      "NEW1_041",
+      "EX1_538",
+      "EX1_010"
+    ],
+    "draft_over": false
+  },
+  "14": {
+    "hero": "hunter",
+    "drafted":
+    [
+      "NEW1_041",
+      "EX1_538",
+      "EX1_010",
+      "OG_325",
+      "AT_094",
+      "AT_111",
+      "DS1_070",
+      "GVG_073",
+      "NEW1_031",
+      "EX1_564",
+      "AT_010",
+      "OG_179",
+      "NEW1_031",
+      "OG_152",
+      "LOE_020",
+      "GVG_065",
+      "EX1_008",
+      "DS1_183",
+      "EX1_538",
+      "GVG_099",
+      "CS2_127",
+      "CS2_084",
+      "EX1_617",
+      "EX1_539",
+      "EX1_617",
+      "EX1_593",
+      "EX1_506",
+      "DS1_070",
+      "CS2_221"
+    ],
+    "draft_over": false
+  },
+  "15": {
+    "hero": null,
+    "drafted": [],
+    "draft_over": true
+  },
+  "16": {
+    "hero": null,
+    "drafted": [],
+    "draft_over": true
   }
 }

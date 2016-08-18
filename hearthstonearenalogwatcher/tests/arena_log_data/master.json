@@ -177,5 +177,15 @@
     "hero": null,
     "drafted": [],
     "draft_over": true
+  },
+  "17": {
+    "hero": "paladin",
+    "drafted": [],
+    "draft_over": false
+  },
+  "18": {
+    "hero": "paladin",
+    "drafted": ["OG_222"],
+    "draft_over": false
   }
 }

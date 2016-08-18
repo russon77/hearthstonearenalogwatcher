@@ -1,0 +1,61 @@
+D 11:15:06.8850118 DraftManager.OnChoicesAndContents - Draft Deck ID: 618717904, Hero Card = HERO_05
+D 11:15:06.8850118 DraftManager.OnChoicesAndContents - Draft deck contains card NEW1_041
+D 11:15:06.8870120 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_538
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_010
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card OG_325
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card AT_094
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card AT_111
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card DS1_070
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card GVG_073
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card NEW1_031
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_564
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card AT_010
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card OG_179
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card OG_152
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card LOE_020
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card GVG_065
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_008
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card DS1_183
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card GVG_099
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card CS2_127
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card CS2_084
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_617
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_539
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_593
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_506
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card CS2_221
+D 11:15:06.8880120 DraftManager.OnChoicesAndContents - Draft deck contains card OG_271
+D 11:15:06.8890121 SetDraftMode - ACTIVE_DRAFT_DECK
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft Deck ID: 618717904, Hero Card = HERO_05
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card NEW1_041
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_538
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_010
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card OG_325
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card AT_094
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card AT_111
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card DS1_070
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card GVG_073
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card NEW1_031
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_564
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card AT_010
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card OG_179
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card OG_152
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card LOE_020
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card GVG_065
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_008
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card DS1_183
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card GVG_099
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card CS2_127
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card CS2_084
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_617
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_539
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_593
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card EX1_506
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card CS2_221
+D 11:21:46.7628835 DraftManager.OnChoicesAndContents - Draft deck contains card OG_271
+D 11:21:46.7628835 SetDraftMode - IN_REWARDS
+D 11:29:13.9914636 SetDraftMode - NO_ACTIVE_DRAFT
+D 11:29:35.2086771 DraftManager.OnBegin - Got new draft deck with ID: 618943716
+D 11:29:35.2086771 SetDraftMode - DRAFTING
+D 11:29:41.5250384 Client chooses: Uther Lightbringer (HERO_04)
+D 11:29:42.6771043 DraftManager.OnChosen(): hero=HERO_04 premium=NORMAL

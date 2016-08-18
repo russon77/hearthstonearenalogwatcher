@@ -7,7 +7,7 @@ def readme():
 
 
 setup(name='hearthstonearenalogwatcher',
-      version='0.1',
+      version='0.1.1',
       description='provide an interface for getting hearthstone arena events: '
                   'entering, exiting, hero selected, card drafted',
       long_description=readme(),

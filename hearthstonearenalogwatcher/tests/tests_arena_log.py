@@ -14,7 +14,7 @@ class TestArenaLogParser(TestCase):
 
             for subkey in master[key]:
                 self.assertEqual(getattr(draft_state, subkey), master[key][subkey],
-                                 msg="Logfile %s.log\tKey %s\tReceived: %s\tExpected: %s\n" %
+                                 msg="\nLogfile %s.log\tKey %s\tReceived: %s\tExpected: %s\n" %
                                      (key, subkey, getattr(draft_state, subkey), master[key][subkey]))
 
 

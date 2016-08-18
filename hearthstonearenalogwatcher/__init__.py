@@ -85,10 +85,10 @@ class HearthstoneArenaLogWatcher(object):
         with open(log_location) as log_file:
             for line in log_file:
                 # first check for "SetDraftMode - %s"
-                # if line matches DRAFTING, then a new draft has begun, so our state should be reset
+                # if line matches DRAFTING, then a new draft has begun OR drafting has resumed -- have to be careful
                 if "SetDraftMode - DRAFTING" in line:
                     # hero = None
-                    cards = []
+                    # cards = []
                     draft_over = False
                 # no active draft means a blank slate
                 elif "SetDraftMode - NO_ACTIVE_DRAFT" in line:
@@ -124,11 +124,6 @@ class HearthstoneArenaLogWatcher(object):
                     cards = []
 
                     draft_over = False
-                # check to see if the draft has been reset while our watcher is open: if so, reset the draft state
-                elif "SetDraftMode - NO_ACTIVE_DRAFT" in line or "SetDraftMode - ACTIVE_DRAFT_DECK" in line or \
-                        "SetDraftMode - IN_REWARDS" in line:
-                    hero = None
-                    cards = []
 
         return ArenaDraft(hero, cards, draft_over)
 
